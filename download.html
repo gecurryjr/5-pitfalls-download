@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thanks! Your Guide Is On the Way</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .message {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .sub {
+      font-size: 1rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">📥 Your guide is downloading...</div>
+  <div class="sub">If the download doesn't start, <a href="https://gecurryjr.github.io/5-pitfalls-download/5_Pitfalls_Guide.pdf" download>click here</a>.</div>
+
+  <script>
+    // Trigger auto-download
+    const link = document.createElement('a');
+    link.href = 'https://gecurryjr.github.io/5-pitfalls-download/5_Pitfalls_Guide.pdf';
+    link.download = '5_Pitfalls_Guide.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Redirect after 5 seconds
+    setTimeout(() => {
+      window.location.href = 'https://gregorycurry.daltonwade.com/pages/expired-home-listing-in-west-palm-beach-get-a-second-chance-strategy-that-works';
+    }, 5000);
+  </script>
+</body>
+</html>
+
