@@ -3,20 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thanks – Your Guide is Downloading</title>
+  <title>Thanks! Your Download is On the Way</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #0077cc;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #005fa3;
+    }
+  </style>
   <script>
-    window.onload = function () {
+    setTimeout(function () {
       const link = document.createElement('a');
-      link.href = './5_Pitfalls_to_Avoid_When_Selling_Your_Home_Again_Guide.pdf';
-      link.download = '5_Pitfalls_to_Avoid_When_Selling_Your_Home_Again_Guide.pdf';
-      document.body.appendChild(link);
+      link.href = '5_Pitfalls_to_Avoid_When_Selling_Your_Home_Again_Guide.pdf';
+      link.download = '5_Pitfalls_Guide.pdf';
       link.click();
-      document.body.removeChild(link);
-    };
+    }, 2000); // 2-second delay
   </script>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 100px;">
-  <h2>Thanks for requesting the guide!</h2>
-  <p>Your download should start automatically. If not, <a href="./5_Pitfalls_to_Avoid_When_Selling_Your_Home_Again_Guide.pdf" download>click here</a>.</p>
+<body>
+  <h1>Thanks for Requesting the Guide!</h1>
+  <p>Your download is starting automatically.<br>If it doesn't, <a href="5_Pitfalls_to_Avoid_When_Selling_Your_Home_Again_Guide.pdf" download>click here</a>.</p>
+  
+  <a href="https://gregorycurry.daltonwade.com/pages/expired-home-listing-in-west-palm-beach-get-a-second-chance-strategy-that-works" class="button">Return to Website</a>
 </body>
 </html>
